@@ -1,0 +1,35 @@
+.progress-slider {
+  position: relative;
+}
+
+.slider-btn {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: opacity 0.3s;
+  overflow: hidden;
+}
+
+.slider-btn-active {
+  opacity: 1;
+}
+
+.slider-btn-inactive {
+  opacity: 0.5;
+}
+
+.slider-progress-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slider-progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

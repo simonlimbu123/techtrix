@@ -1,4 +1,4 @@
-import "../style/eventPage.css";
+import "../style/eventpage.css";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ProgressSlider,

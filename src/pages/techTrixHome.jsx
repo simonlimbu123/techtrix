@@ -699,7 +699,7 @@ export default function TechTrixNepal() {
 
 function ProductOrbit({ open, onToggle }) {
   const positions = [{ x: 0, y: -120 }, { x: -110, y: -60 }, { x: 110, y: -60 }, { x: -110, y: 60 }, { x: 110, y: 60 }, { x: 0, y: 120 }];
-  const positionsMobile = [{ x: 0, y: -90 }, { x: -90, y: -30 }, { x: 90, y: -30 }, { x: -80, y: 50 }, { x: 80, y: 50 }, { x: 0, y: 90 }];
+  const positionsMobile = [{ x: 0, y: -100 }, { x: -90, y: -30 }, { x: 90, y: -30 }, { x: -80, y: 50 }, { x: 80, y: 50 }, { x: 0, y: 100 }];
   return (
     <div className="orbit-container">
       <div className="pulse-ring" /><div className="pulse-ring2" />

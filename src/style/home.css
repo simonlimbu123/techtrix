@@ -434,7 +434,7 @@
 
 }
 
-@media(max-width:480px) and (max-height:700px) {
+@media(max-width:480px) and (max-height:580px) {
      .side-nav {
         width: 100%;
         bottom: -10%;
@@ -472,7 +472,7 @@
     }
 
     .animated-button {
-        padding: 5px 25px;
+        padding: 10px 25px;
         font-size: .7rem;
         gap: 20rem;
         width: 130px;

@@ -664,6 +664,7 @@
         flex-direction: column;
         gap: clamp(.5rem, 2vw, 3rem);
         padding: 0 1.5rem;
+        padding-top: 90px;
     }
 
     .service-card {
@@ -713,6 +714,9 @@
 }
 
 @media(max-width:480px) and (max-height:750px) {
+      .services-grid {
+        padding-top: 0;
+    }
     .services-section {
         min-height: 100vh;
         display: flex;

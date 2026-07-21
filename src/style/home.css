@@ -1024,6 +1024,7 @@
         flex-wrap: nowrap;
         overflow: scroll;
         padding: 2rem;
+        align-items: center;
     }
 
     .upcoming-event {

@@ -709,7 +709,7 @@
     }
 }
 
-@media(max-width:480px) and (max-height:700px) {
+@media(max-width:480px) and (max-height:750px) {
     .section {
         min-height: 100vh;
         display: flex;

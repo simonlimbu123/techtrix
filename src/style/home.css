@@ -476,7 +476,7 @@
     .home-content {
         display: flex;
         flex-direction: column;
-        gap: 7rem;
+        gap: 9rem;
         align-items: center;
     }
 

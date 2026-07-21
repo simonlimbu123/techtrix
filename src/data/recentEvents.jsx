@@ -1,5 +1,5 @@
-import codewar from "../assets/codewar/codewarLogo.png"
-import futsal from "../assets/futsal/futsalLogo.png"
+import codewar from "../assets/codewarLogo.png"
+import futsal from "../assets/futsalLogo.png"
 import comingSoon from "../assets/comingSoon.png"
 import events from "../assets/events.png"
 

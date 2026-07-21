@@ -183,9 +183,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
     flex-wrap: wrap;
-    max-width: 1400px;
+    width: 100%;
+    padding: 0 15rem;
 }
 
 .home-text {
@@ -357,20 +357,26 @@
 .orbit-center.open .lock-icon {
     color: #888b9a;
 }
-.orbit-icon-mobile{
+
+.orbit-icon-mobile {
     visibility: hidden;
 }
 
 /* mobile home */
 
 @media (max-width:480px) {
-    .orbit-icon{
+    .home-content{
+        padding: 0 1rem;
+    }
+    .orbit-icon {
         visibility: hidden;
     }
-    .orbit-icon-mobile{
-    display: inline;
-    visibility: visible;
-}
+
+    .orbit-icon-mobile {
+        display: inline;
+        visibility: visible;
+    }
+
     .side-nav {
         display: none;
     }
@@ -434,8 +440,8 @@
 
 }
 
-@media(max-width:480px) and (max-height:580px) {
-     .side-nav {
+@media(max-width:480px) and (max-height:750px) {
+    .side-nav {
         width: 100%;
         bottom: -10%;
         transform: translateY(50%);
@@ -705,53 +711,44 @@
 
 @media(max-width:480px) and (max-height:700px) {
     .section {
-        height: auto;
         min-height: 100vh;
+        display: flex;
+        align-items: center;
     }
+
+    .services-section {}
 
     .services-grid {
-        display: flex;
-        flex-direction: column;
-        gap: clamp(.5rem, 2vw, 3rem);
-        padding: 0 1.5rem;
-        padding-top: 90px;
-    }
-
-    .service-card {
-        flex: 1;
-        flex-direction: row;
-    }
-
-    .services-section {
-        align-items: flex-start;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-rows: (2, 1fr);
+        gap: 1rem;
     }
 
     .services-container {
         padding: 1rem;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: max-content;
+        overflow: scroll;
+        justify-content: start;
     }
 
     .service-head {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .service-desc {
         line-height: normal;
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .service-img * {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 
     .service-card {
         padding: 1rem;
-        min-height: 100px;
+        min-height: max-content;
+        min-width: 250px;
     }
 
     .service-id {
@@ -762,6 +759,7 @@
         gap: clamp(.2rem, 2vw, 1rem);
     }
 }
+
 
 /* tablet section */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -1006,93 +1004,31 @@
         right: 1rem;
         font-size: 2rem;
     }
-
-    .upcoming-event {
-        max-width: 100%;
-    }
-
     .upcoming-event-card-icon {
         font-size: 1.3rem;
     }
 
     .event-section {
-        padding: 0 1.5rem;
-        padding-top: 100px;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .upcoming-event {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 0;
-        height: max-content;
+        padding: 0;
+        width: max-content;
     }
 
     .upcoming-events-container {
-        gap: 1rem;
-        flex-direction: column;
-        height: 700px;
-    }
-
-    .upcoming-event-image {
+        display: flex;
+        align-items: center;
         height: 100%;
-        flex: 1;
-
-    }
-
-    .upcoming-event-register-btn * {
-        text-align: start;
-    }
-
-    .upcoming-event-register-btn>a {
-        justify-content: start;
-    }
-
-    .upcoming-event img {
-        display: block;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        justify-content: start;
+        padding: 2rem;
     }
 
-    .upcoming-event-details {
-        margin-top: 0rem;
-        padding: .5rem 1rem;
-        display: flex;
-        flex-direction: column;
-        flex: 2;
-        gap: 1rem;
+    .upcoming-event {
+        flex: auto;
+        overflow: hidden;
+        width: 250px;
         height: max-content;
-
-
-    }
-
-    .event-venue {
-        margin-top: .5rem;
-        gap: .5rem;
-    }
-
-    .venue-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .upcoming-event-text {
-        gap: 0.3rem;
-    }
-
-    .upcoming-event-title {
-        font-size: 1.2rem;
-    }
-
-    .upcoming-event-des {
-        font-size: .9rem;
-    }
-
-    .upcoming-event-action {
-        text-align: start;
     }
 }
 

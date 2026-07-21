@@ -403,6 +403,7 @@
 
     .home-section {
         align-items: start;
+        padding-top: 100px;
     }
 
     .home-content {
@@ -441,6 +442,9 @@
 }
 
 @media(max-width:480px) and (max-height:750px) {
+     .home-section {
+        padding-top: 100px;
+    }
     .side-nav {
         width: 100%;
         bottom: -10%;
@@ -710,7 +714,7 @@
 }
 
 @media(max-width:480px) and (max-height:750px) {
-    .section {
+    .services-section {
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -761,7 +765,7 @@
 
 /* tablet section */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .section {
+    .services-section {
         height: auto;
         min-height: 100vh;
     }

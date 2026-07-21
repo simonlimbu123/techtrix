@@ -403,7 +403,6 @@
 
     .home-section {
         align-items: start;
-        padding-top: 100px;
     }
 
     .home-content {
@@ -468,14 +467,13 @@
 
     .home-section {
         align-items: start;
-        padding-top: 100px;
     }
 
     .home-content {
         display: flex;
         flex-direction: column;
         gap: 7rem;
-
+        align-items: center;
     }
 
     .animated-button {

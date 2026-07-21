@@ -537,6 +537,7 @@ export default function TechTrixNepal() {
 
         {/*  SECTION 2: events  */}
         <div className={`section event-section ${activeSection === 2 ? "active" : ""}`}>
+
           <DottedSurface dark={true} />
 
           <div className="upcoming-events-container">

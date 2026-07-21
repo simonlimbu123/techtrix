@@ -664,7 +664,6 @@
         flex-direction: column;
         gap: clamp(.5rem, 2vw, 3rem);
         padding: 0 1.5rem;
-        padding-top: 90px;
     }
 
     .service-card {

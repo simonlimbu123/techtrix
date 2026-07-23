@@ -2,7 +2,7 @@ import TechTrixNepal from "./pages/techTrixHome";
 import Events from "./pages/events";
 import EventPage from "./pages/eventPage";
 import {Routes,Route } from "react-router-dom";
-import ScrollToTop from "./component/scrollTotop";
+import ScrollToTop from "./utils/scrollToTop";
 
 const App =()=>{
     return(

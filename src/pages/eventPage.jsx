@@ -10,6 +10,7 @@ import {
 import { useState, useRef, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { eventData } from "../data/eventsData";
+import ScrolltoTop from "../component/GalleryScrolltoTop";
 
 const generateVariants = (direction) => {
   const axis =
@@ -179,6 +180,7 @@ export default function EventPage() {
 
   return (
     <>
+    <ScrolltoTop/>
       <ProgressSlider className="progress-slide" vertical={false}>
         <SliderContent>
           {event.sliderContent.map((item) => (
